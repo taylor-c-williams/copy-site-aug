@@ -42,11 +42,18 @@ header {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+	margin: 20px;
+}
+
+.logo img {
+	border-radius: 30px;
 }
 
 h2 {
-	font-size: 1rem;
+	font-size: 2rem;
 	padding-left: 5px;
+	font-family: "Space Mono", monospace;
+	letter-spacing: 15px;
 }
 
 .top-nav {
@@ -151,8 +158,9 @@ nav {
 .quote {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	font-size: 5rem;
+	font-size: 3.5rem;
 	margin-top: 50px;
+	margin-left: 20px;
 }
 
 .image-row {

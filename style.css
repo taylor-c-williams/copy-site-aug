@@ -60,6 +60,11 @@ h2 {
 	font-weight: bold;
 	font-size: 1.25rem;
 }
+
+.top-nav a {
+	padding: 20px;
+}
+
 .sign-up {
 	display: inline;
 	padding: 10px;

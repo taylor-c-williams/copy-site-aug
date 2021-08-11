@@ -12,6 +12,16 @@ html {
 	font-family: "Space Mono", monospace;
 }
 
+a {
+	text-decoration: none;
+	color: black;
+	padding: 2px;
+}
+
+a:hover {
+	border-bottom: 2px solid black;
+}
+
 main {
 	display: grid;
 	grid-template-rows: 0.5fr 0.25fr 0.25fr 1.5fr 3fr 3fr;
@@ -21,10 +31,11 @@ main {
 
 header {
 	display: grid;
-	grid-template-columns: 2fr 1fr;
+	grid-template-columns: 1.5fr 1fr;
 	justify-content: center;
 	align-items: center;
 	margin-left: 5px;
+	font-family: "Work Sans", sans-serif;
 }
 
 .logo {
@@ -38,6 +49,19 @@ h2 {
 	padding-left: 5px;
 }
 
+.top-nav {
+	font-weight: bold;
+	font-size: 1.25rem;
+}
+.sign-up {
+	display: inline;
+	padding: 10px;
+	width: 30px;
+	border-radius: 40px;
+	border: 1px solid rgba(158, 179, 194, 0.25);
+	box-shadow: 3px 3px 3px rgba(158, 179, 194, 0.25);
+}
+
 nav {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -48,22 +72,22 @@ nav {
 
 .nav {
 	display: flex;
+	flex-direction: row;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: center;
 	padding: 2px;
+	font-family: "Work Sans", sans-serif;
+	font-size: 1.33rem;
+}
+
+.nav a {
+	margin: 20px;
 }
 
 .search-bar {
 	display: grid;
-	grid-template-columns: 400px 400px 400px 105px;
-	align-items: initial;
-	justify-content: center;
-}
-
-.search-bar-headers {
-	display: grid;
-	grid-template-columns: 400px 400px 400px 105px;
-	align-items: baseline;
+	grid-template-columns: 400px 400px 400px auto;
+	align-items: center;
 	justify-content: center;
 }
 
@@ -97,10 +121,31 @@ nav {
 	font-family: "Work Sans", sans-serif;
 }
 
-#search {
-	padding: 20px;
+.new {
+	padding: 10px;
 	margin: 10px;
+	height: 100%;
 	font-family: "Work Sans", sans-serif;
+	font-size: 0.75rem;
+	background-color: #ff385c;
+	color: white;
+	border-radius: 5px;
+	border: none;
+}
+
+#search {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	margin: 10px;
+	height: 80%;
+	font-family: "Work Sans", sans-serif;
+	background-color: #ff385c;
+	color: white;
+	border-radius: 5px;
+	border: none;
+	font-size: 1.1rem;
 }
 
 .quote {

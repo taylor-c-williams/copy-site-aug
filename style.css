@@ -52,14 +52,10 @@ nav {
 .search-bar-headers {
 	display: grid;
 	grid-template-columns: 400px 400px 400px 105px;
+	align-items: center;
 	justify-content: center;
 }
 
-/* .search-bar-headers {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-} */
 .search-bar {
 	display: flex;
 	justify-content: center;
